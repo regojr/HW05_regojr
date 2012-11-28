@@ -74,6 +74,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\materials.d\Graph.h" />
+    <ClInclude Include="..\materials.d\GraphAlgs.h" />
+    <ClInclude Include="..\materials.d\ListGraph.h" />
+    <ClInclude Include="..\materials.d\MatrixGraph.h" />
+    <ClInclude Include="..\materials.d\StarbucksMap.h" />
+    <ClInclude Include="..\materials.d\Tester.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\materials.d\Controller.cpp" />
+    <ClCompile Include="..\materials.d\StarbucksMap.cpp" />
+    <ClCompile Include="..\materials.d\Tester.cpp" />
+    <ClCompile Include="ListGraph.cpp" />
+    <ClCompile Include="MatrixGraph.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\materials.d\Starbucks.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
