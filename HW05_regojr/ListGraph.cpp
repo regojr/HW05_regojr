@@ -12,7 +12,6 @@ ListGraph::ListGraph(int numNodes)
 /* Destructor */
 ListGraph::~ListGraph()
 {
-
 }
 
 /* modifier */ 
@@ -60,7 +59,7 @@ std::list<NWPair> ListGraph::getAdj(NodeID u) const
 /* inspector */
 unsigned ListGraph::degree(NodeID u) const
 {
-	int edgeCount = 0;
+	unsigned edgeCount = 0;
 	EList::const_iterator iter;
 	iter = edgeList[u].begin();
 	while( iter != edgeList[u].end() ) {
