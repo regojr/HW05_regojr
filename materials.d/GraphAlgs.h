@@ -21,3 +21,9 @@
  */
 
 std::pair<std::vector<NodeID>, EdgeWeight> TSP(Graph* G);
+
+/* Path search for a tour */
+void getBestTour( NodeID* sequence, int size, int s);
+
+/* Gets the length of the tour path given */
+EdgeWeight getTourLength( NodeID* tour, int tour_stops );

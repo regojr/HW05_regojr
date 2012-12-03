@@ -28,6 +28,7 @@ void ListGraph::addEdge(NodeID u, NodeID v, EdgeWeight weight)
 	}
 
 	if( match_found == false ) {	// if there is no match found, add the edge to lists
+		num_edges++;
 		edgeList[v].push_front( NWPair( u, weight ) );
 		edgeList[u].push_front( NWPair( v, weight ) );
 	}
