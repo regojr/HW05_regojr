@@ -4,6 +4,23 @@
 
 #pragma once
 
+/* Path search for a tour
+void getBestTour( NodeID* sequence, int size, int s);
+*/
+
+/* recursively makes tours until shortest is created REFERENCED FROM: angless */
+void makeTour( NodeID* ids, int size, int start );
+
+/* Gets the length of the tour path given */
+EdgeWeight getTourLength( NodeID* tour, int tour_stops );
+
+/* method to rearrange nodes to check for shorter path - used by makeTour */
+void changeRoute( NodeID* toSwap, int swapTo, int swapFrom );
+
+
+
+
+
 
 /*
  * Solves the Traveling Salesperson Problem: finding the shortest cycle through a graph that 
@@ -22,8 +39,3 @@
 
 std::pair<std::vector<NodeID>, EdgeWeight> TSP(Graph* G);
 
-/* Path search for a tour */
-void getBestTour( NodeID* sequence, int size, int s);
-
-/* Gets the length of the tour path given */
-EdgeWeight getTourLength( NodeID* tour, int tour_stops );
