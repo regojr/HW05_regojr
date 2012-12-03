@@ -46,6 +46,7 @@ EdgeWeight ListGraph::weight(NodeID u, NodeID v) const
 		if( theEdge.first == v )
 			return theEdge.second;
 	}
+	return 0.0;
 }
 
 /* inspector */
