@@ -75,7 +75,7 @@ void testSingleTSP(StarbucksMap& SB, int size, bool use_matrix) {
     cout << R[p.first[i]] << "\n";
   deleteStarbucksGraph(G, use_matrix);
 }
-//
+
 pair<int,int> testSpeedTSP(StarbucksMap& SB, double time_limit, bool use_matrix) {
 	int n = 3;
 	int totalTime = 0;
@@ -117,10 +117,10 @@ int main(int argc, char** argv) {
 	* TSP code, remove the comments (along with the comments taking out 
 	* testSingleTSP and testSpeedTSP, above).
 	********************************/
-  //// Read in Starbucks Locations, test your TSP algorithm on a random MatrixGraph 
-  //// of size n, and test your TSP algorithm on a random ListGraph of size n.
+  // Read in Starbucks Locations, test your TSP algorithm on a random MatrixGraph 
+  // of size n, and test your TSP algorithm on a random ListGraph of size n.
 
-  //// Uncomment the following three lines once your TSP function has been written
+  // Uncomment the following three lines once your TSP function has been written
   StarbucksMap SB;
 
   testSingleTSP(SB, 5, true);
